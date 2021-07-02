@@ -43,5 +43,7 @@ function intercept_ajax (rules) {
         });
 
         return ajax_open_original.apply(this, open_arguments);
-       };
+    };
 };
+
+window.intercept_ajax = intercept_ajax;
